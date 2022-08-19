@@ -1,0 +1,17 @@
+:root {
+	--mouse-x: 0;
+	--mouse-y: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.block {
+	cursor: pointer;
+	transform: translate(calc(var(--mouse-x) - 50%), calc(var(--mouse-y) - 50%));
+	width: 200px;
+	height: 200px;
+	background: red;
+}
